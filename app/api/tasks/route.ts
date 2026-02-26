@@ -6,6 +6,8 @@ import { getCurrentUser } from '@/lib/jwt'
 import { successResponse, errorResponse, unauthorizedResponse, serverErrorResponse } from '@/lib/response'
 import mongoose from 'mongoose'
 
+export const dynamic = 'force-dynamic'
+
 // GET /api/tasks - List tasks with pagination, filter, search
 export async function GET(req: NextRequest) {
   try {

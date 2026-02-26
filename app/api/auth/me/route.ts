@@ -3,6 +3,8 @@ import { successResponse, unauthorizedResponse, serverErrorResponse } from '@/li
 import { connectDB } from '@/lib/db'
 import User from '@/lib/models/User'
 
+export const dynamic = 'force-dynamic'
+
 export async function GET() {
   try {
     const payload = await getCurrentUser()
